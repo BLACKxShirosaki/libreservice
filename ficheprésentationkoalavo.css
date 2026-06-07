@@ -1,0 +1,118 @@
+/** FICHE DE PRESENTATION PAR KOALA VOLANT ***/
+
+/***** COULEURS *****/
+
+/* Couleur des titres */
+
+.fichepres1 .pres-0 h1{ /* Prénom / Nom */
+text-shadow:2px 2px 0 #c98a33, 2px -2px 0 #c98a33,-2px 2px 0 #c98a33, -2px -2px 0 #c98a33,2px 0px 0 #c98a33, 0px 2px 0 #c98a33,-2px 0px 0 #c98a33, 0px -2px 0 #c98a33, 2px 2px 2px rgba(142,32,95,0);
+ color:#fff;
+}
+
+.fichepres1 .pres-1 strong, .fichepres1 .pres-3 strong, .fichepres1 .pres-4 strong, .fichepres1 .pres-4 span cita, .fichepres1 .pres-5 strong{ /*Petit titre*/
+ color:#c98a33;
+}
+
+.fichepres1 .pres-4 span em, .fichepres1 .pres-5 .credit div{ color:#2e2d2c; }
+
+/* Couleur des petits rectangles d'info */
+
+.fichepres1 h3{ background: #444;
+background: linear-gradient(90deg, #2e2d2c 0%, #c98a33 100%);
+ color:#fff; text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.fichepres1 .pres-1 h3:hover{ background:#444; }
+
+.fichepres1 .pres-1 div, .fichepres1 .pres-3 div, .fichepres1 .pres-2 span, .fichepres1 .pres-4 span, .fichepres1 .pres-5 span, .fichepres1 .pres-5 .credit div{ background:#fff; }
+
+/* Couleur des bordures des gouts */
+
+.fichepres1 .pres-3, .fichepres1 .pres3-spec1, .fichepres1 .pres-5 span{ border-color:#2e2d2c !important; }
+.fichepres1 .pres-3 .fichepres1 .pres3-spec2{ border-color:#c98a33 !important; }
+
+/* Couleur de la partie histoire */
+
+.fichepres1 .pres-4 img{ border-color:#fff !important; }
+.fichepres1 .pres-4 strong{ background-color:#fff !important; }
+
+/* Couleur de l'ascenseur */
+
+.fichepres1::-webkit-scrollbar { width: 6px; height: 6px; }
+.fichepres1::-webkit-scrollbar-button { width: 0px; height: 0px; }
+.fichepres1::-webkit-scrollbar-thumb { background: #525252; border: 0px none #ffffff; border-radius: 50px;}
+.fichepres1::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active{background: #525252;}
+.fichepres1::-webkit-scrollbar-track { background: #c4c4c4; border: 0px none #ffffff; border-radius: 50px;}
+.fichepres1::-webkit-scrollbar-track:hover { background: #d2d2d2;}
+.fichepres1::-webkit-scrollbar-track:active { background: #e2e2e2;}
+.fichepres1::-webkit-scrollbar-corner { background: transparent;}
+
+/***** STRUCTURES *****/
+.fichepres1{ width:450px; margin:0 auto; font-size:11px; line-height:1.6em; color#555; font-family:Verdana; }
+.fichepres1 *{ box-sizing:border-box; }
+
+/* PARTIE IDENTITE */
+
+
+/* Avatar & Gif */
+
+.fichepres1 .ficheimg-0{ width:100%; height:150px; object-fit:cover; }
+.fichepres1 .pres-0{ position:relative; width:450px; height:150px; }
+.fichepres1 .pres-0 h1{ font-family: 'Anton', sans-serif; color:#fff; font-weight:normal; text-transform:uppercase; font-size:30px; line-height:40px;
+letter-spacing:2px; position:absolute; top:calc(100% / 4); left:calc(100% / 3);
+}
+
+.fichepres1 .pres-1{ display:flex; position:relative; }
+.fichepres1 .pres-1 img{ position:relative; top:-35px; width:150px; height:240px; margin-left:10px; clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);}
+.fichepres1 .pres-1 div{ width:275px; height:300px; overflow:auto; padding:15px; position:relative; top:-18px; }
+.fichepres1 .pres-1 .descri-pres{ display:flex; flex-wrap:wrap; }
+
+.fichepres1 .pres-1 strong{ margin:0; font-family: 'Roboto Mono', monospace; letter-spacing:3px; }
+
+/* Rectangles d'informations */
+
+.fichepres1 .pres-1 h3{ width:48%; margin: 2px 2px; padding:1px;
+ font-size:9px; line-height:11px; font-family: 'Roboto Mono', monospace; text-transform:uppercase;
+ display:flex; justify-content:center; align-items:center;
+}
+
+.fichepres1 .pres-1 h3:last-of-type{ width:98%; max-height: 24px; }
+
+/* PARTIE ANECDOTES */
+
+.fichepres1 .pres-2{ display:flex; position:relative; }
+.fichepres1 .pres-2 span{ height:200px; width:395px; display:block; overflow:auto; padding:20px; text-align:justify; }
+.fichepres1 .pres-2 h3{ position:absolute; top:-10px; left:-10px; margin: 2px 2px; padding:5px; font-size:11px; line-height:13px; font-family: 'Roboto Mono', monospace; text-transform:uppercase; }
+.fichepres1 .pres-2 img{ display:block; clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); position:absolute; right:-37px; top:-61px; width:120px; height:120px; object-fit:cover; }
+
+/* PARTIE GOUTS */
+
+.fichepres1 .pres-3{ display:flex; flex-wrap:wrap; width:450px; z-index:13; position:relative; align-items:flex-start; }
+.fichepres1 .pres-3 div{ width:47%; position:relative; margin:10px 5px; }
+.fichepres1 .pres-3 span{ height:200px; overflow:auto; text-align:justify; display:block; padding:15px; }
+.fichepres1 .pres-3 h3{ position:absolute; top:-10px; left:45%; width:120px; text-align:center; margin:2px 2px; padding:5px; font-size:11px; line-height:13px; font-family: 'Roboto Mono', monospace; text-transform:uppercase; }
+.fichepres1 .pres-3 strong{ margin:0; font-family: 'Roboto Mono', monospace; letter-spacing:3px; }
+
+.fichepres1 .pres-3 .pres3-spec1, .pres-3 .pres3-spec2 span{ -moz-transform: rotate(2deg);-webkit-transform: rotate(2deg);-o-transform: rotate(2deg);-ms-transform: rotate(2deg);transform: rotate(2deg);}
+.fichepres1 .pres-3 .pres3-spec1 span, .pres-3 .pres3-spec2{ -moz-transform: rotate(-2deg);-webkit-transform: rotate(-2deg);-o-transform: rotate(-2deg);-ms-transform: rotate(-2deg); transform: rotate(-2deg); }
+.fichepres1 .pres-3 .pres3-spec1{ border-right:3px solid; border-bottom:3px solid; }
+.fichepres1 .pres-3 .pres3-spec2{ border-left:3px solid; border-top:3px solid; }
+
+/* PARTIE HISTOIRE */
+
+.fichepres1 .pres-4 img{ width:100%; height:200px; object-fit:cover; border-top:4px solid; }
+.fichepres1 .pres-4 h3{ text-align:center; margin:2px 2px; padding:5px; font-size:11px; line-height:13px; font-family: 'Roboto Mono', monospace; text-transform:uppercase; position:relative; top:-10px; width:300px; left:-21px;}
+cita{ margin:0; font-family: 'Roboto Mono', monospace; letter-spacing:3px; width:420px; padding:5px; display:block; position:relative; top:-12px; right:-13px;font-family: 'Roboto Mono', monospace; letter-spacing:2px; font-weight:bold; color:#c98a33;background-color:#DEDEDE;}
+.fichepres1 .descri-pres4 em:before{ content:'« '; }
+.fichepres1 .descri-pres4 em:after{ content:'» '; }
+.fichepres1 .pres-4 span{ display:block; padding:20px; height:200px; overflow:auto; position:relative; top:-15px; text-align:justify; }
+
+/* PARTIE HORS JEU */
+
+.fichepres1 .pres-5{ display:flex; }
+.fichepres1 .pres-5 img{ clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); -moz-transform: rotate(-15deg);-webkit-transform: rotate(-15deg);-o-transform: rotate(-15deg);-ms-transform: rotate(-15deg);
+transform: rotate(-15deg);}
+.fichepres1 .pres-5 .credit{ position:relative; left:-20px; top:-30px; z-index:2;}
+.fichepres1 .pres-5 .credit div{ font-family: 'Roboto Mono', monospace; letter-spacing:3px; position:absolute; top: 21px; left: 118%; font-size: 7px; padding: 2px; width:100%;}
+.fichepres1 .pres-5 span { display:block; padding:20px; border-bottom:2px solid; position:relative; left:-30px; z-index:1;}
+.fichepres1 .pres-5 strong{ font-family: 'Roboto Mono', monospace; letter-spacing:2px; }
