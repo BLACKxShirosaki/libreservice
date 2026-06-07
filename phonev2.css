@@ -1,0 +1,15 @@
+.ft{width:400px;height:760px;background:url('https://i.imgur.com/d9Cut1e.png');background-size:100%;}
+.fdf{margin-top :10px;margin-right:5px;}
+.contactmarge{display:flex;align-items:center;}
+.contactmarge h{font-family: 'Dosis', sans-serif;font-size:13px;font-weight:bold;margin-left:70px;margin-top:-30px;}
+.boxcontact{display:flex;align-items:center;margin-left:60px;padding-top:90px;}
+.imgcontact{width:30px;border-radius:100%;margin-right:10px;}
+.fdt{color:black;text-align:left;font-size:18px;font-family: 'Dosis', sans-serif;text-transform:uppercase;}
+.fdm{width:320px;height:525px;overflow:auto;margin-top:20px;}
+
+
+.mess{display:flex;align-items:center;}
+.descriexp{width:220px;text-align:justify;border-radius: 10px;margin:5px;padding:15px;font-family: "Nunito", sans-serif;font-size:14px;background:var(--expbackground);color:var(--expcolor);}
+.descrides{width:230px;text-align:justify;border-radius: 10px;margin:5px;padding:15px;font-family: "Nunito", sans-serif;font-size:14px;background:var(--monbackground);color:var(--macolor);}
+.imgfdp{border-radius:100%;width:50px;}
+.imgmess{width:220px;}
