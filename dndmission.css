@@ -1,0 +1,142 @@
+.content-fhmj{
+  width:590px;
+  margin: 0;
+  padding: 0;
+  justify-content: justify;
+  background-color:#BAB9BC;
+  border-radius: 3px;
+  padding:35px;
+}
+.content-fhmj-zrp{
+  width:571px;
+  font-size: 13px;
+  font-family: Calibri;
+  line-height: 14px;
+  text-align: justify;
+  color:#181818;
+  background: linear-gradient(#BAB9BC, #BAB9BC) padding-box,
+              linear-gradient(290deg, #253A39 25%, #492121 70%) border-box;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  padding:5px;
+  border-radius: 3px;
+}
+.header-fmj{
+  vertical-align: middle;
+  width:581px;
+  margin-bottom:-5px;
+}
+.header-fmj img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(#B6B6B6, #B6B6B6) padding-box,
+              linear-gradient(290deg, #253A39 25%, #492121 70%) border-box;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-radius: 3px;
+}
+.zonerp{
+  width:549px;
+  background-color:#E8E8E8;
+  border: 1px solid white;
+  padding:10px;
+  font-size: 14px;
+  font-family: Calibri;
+  line-height: 1.35;
+  text-align: justify;
+  border-radius: 3px;
+}
+.fmj-img-content{
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Aligne verticalement */
+  gap: 20px;
+}
+.img-gifs{
+  width:200px;
+  height:100px;
+  object-fit:cover;
+  margin-bottom:10px;
+  background: linear-gradient(#F5F5F5, #F5F5F5) padding-box,
+              linear-gradient(290deg, #253A39 25%, #492121 70%) border-box;
+  border: 2px solid transparent;
+}
+.img-arcane{
+  background: linear-gradient(#E8E8E8, #E8E8E8) padding-box,
+              linear-gradient(290deg, #253A39 25%, #492121 70%) border-box;
+  border: 1px solid transparent;
+  border-radius:100px;
+  width:100px;
+  height:100px;
+  object-fit:contain;
+}
+.st-fmj{
+  width:527px;
+  height:30px;
+  padding:10px;
+  text-align:right;
+  vertical-align:middle;
+  margin-bottom:8px;
+  background: linear-gradient(290deg, #253A39 25%, #492121 70%);
+  border-radius:3px;
+  border: 1px solid transparent;
+}
+.st-fmj sst{
+  font-size: 24px;
+  text-transform:uppercase;
+  font-weight:300;
+  letter-spacing:-1px;
+  color:white;
+  text-align: center;
+  font-family: "Cormorant Unicase", serif;
+  text-shadow: 0 0 4px white;
+}
+.fmj-instru{
+  background:#A9A9AC;
+  color:black;
+  border-radius: 3px;
+  font-family:'Calibri';
+  width:520px;
+  padding:15px;
+  margin-top:8px;
+  font-size: 13px;
+  font-family: Calibri;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.fmj-instru img{
+  width:23px;
+  height:23px;
+  margin-right:10px;
+  border-radius:3px;
+  vertical-align:top;
+}
+
+.fmj-instru mjmo{
+  background: linear-gradient(290deg, #253A39 25%, #492121 70%);
+  padding:3px;
+  border-radius: 5px;
+  color:white;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+.fmj-instru bmj{
+  color:#233c3b;
+  font-weight:bold;
+}
+.fmj-instru imj{
+  color:#4a2020;
+  font-style:italic;
+}
+.creditfiche{
+  text-align:center;
+  font-size:9px;
+  font-style:italic;
+  text-transform:uppercase;
+  color:#1d1d1d;
+  margin-bottom:-5px;
+}
