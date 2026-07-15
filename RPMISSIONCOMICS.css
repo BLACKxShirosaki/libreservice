@@ -1,0 +1,767 @@
+/* ─────────────────────────────────────
+   FICHE COMICS — FORMAT 600 PX
+───────────────────────────────────── */
+
+.cdm-post {
+  --cdm-red: #f04438;
+  --cdm-red-dark: #b82025;
+  --cdm-yellow: #fff200;
+  --cdm-blue: #169fe3;
+  --cdm-pink: #ff35b5;
+  --cdm-orange: #ff7b32;
+  --cdm-black: #050505;
+  --cdm-white: #f7f7f2;
+
+  width: 600px;
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 6px;
+
+  box-sizing: border-box;
+  overflow: hidden;
+
+  color: var(--cdm-black);
+  background: var(--cdm-red);
+
+  border: 4px solid var(--cdm-black);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cdm-post *,
+.cdm-post *::before,
+.cdm-post *::after {
+  box-sizing: border-box;
+}
+
+
+/* ─────────────────────────────────────
+   BANDEAU SUPÉRIEUR
+───────────────────────────────────── */
+
+.cdm-top {
+  height: 145px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.cdm-top-panel {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  overflow: hidden;
+
+  background-color: var(--cdm-blue);
+  border: 4px solid var(--cdm-black);
+}
+
+.cdm-top-panel img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  filter:
+    grayscale(100%)
+    contrast(1.35)
+    brightness(.8);
+}
+
+.cdm-top-panel::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(0, 0, 0, .35) 1px,
+      transparent 1.4px
+    );
+
+  background-size: 6px 6px;
+  mix-blend-mode: multiply;
+}
+
+
+/* Cartouche THE NEXT DAY */
+
+.cdm-next {
+  width: 60px;
+  min-height: 58px;
+  padding: 5px 3px;
+
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--cdm-black);
+  background: var(--cdm-yellow);
+
+  border: 4px solid var(--cdm-black);
+
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 10px;
+  font-style: italic;
+  line-height: .95;
+  text-align: center;
+
+  transform: rotate(-2deg);
+}
+
+.cdm-next strong {
+  font-size: 15px;
+}
+
+
+/* Cartouche narratif */
+
+.cdm-narration {
+  padding: 7px 9px;
+
+  color: var(--cdm-black);
+  background: var(--cdm-white);
+
+  border: 3px solid var(--cdm-black);
+  box-shadow: 4px 4px 0 var(--cdm-black);
+
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.cdm-narration-top {
+  max-width: 275px;
+
+  position: absolute;
+  top: 15px;
+  left: 67px;
+  z-index: 4;
+}
+
+
+/* ─────────────────────────────────────
+   STRUCTURE PRINCIPALE
+───────────────────────────────────── */
+
+.cdm-layout {
+  margin-top: 6px;
+
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 6px;
+
+  align-items: stretch;
+}
+
+
+/* ─────────────────────────────────────
+   COLONNE IMAGE
+───────────────────────────────────── */
+
+.cdm-left {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cdm-character {
+  height: 520px;
+
+  position: relative;
+  overflow: hidden;
+
+  background: var(--cdm-white);
+  border: 4px solid var(--cdm-black);
+}
+
+.cdm-character img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center top;
+
+  filter:
+    grayscale(100%)
+    contrast(1.3);
+}
+
+.cdm-character::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(0, 0, 0, .17) 1px,
+      transparent 1.45px
+    );
+
+  background-size: 6px 6px;
+  mix-blend-mode: multiply;
+}
+
+
+/* Bulle */
+
+.cdm-bubble {
+  padding: 7px 8px;
+
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  z-index: 4;
+
+  color: var(--cdm-black);
+  background: white;
+
+  border: 3px solid var(--cdm-black);
+  border-radius: 50%;
+
+  font-family: "Comic Sans MS", cursive;
+  font-size: 9px;
+  font-weight: 900;
+
+  transform: rotate(-6deg);
+}
+
+.cdm-bubble::after {
+  content: "";
+
+  width: 10px;
+  height: 16px;
+
+  position: absolute;
+  right: 2px;
+  bottom: -10px;
+
+  background: white;
+  border-right: 3px solid var(--cdm-black);
+
+  transform: rotate(30deg);
+}
+
+
+/* Impact */
+
+.cdm-impact {
+  width: 66px;
+  height: 53px;
+
+  position: absolute;
+  top: 62px;
+  right: -10px;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--cdm-yellow);
+  background: var(--cdm-pink);
+
+  clip-path: polygon(
+    50% 0%,
+    58% 26%,
+    76% 8%,
+    75% 33%,
+    100% 28%,
+    82% 49%,
+    100% 64%,
+    73% 65%,
+    79% 95%,
+    56% 75%,
+    45% 100%,
+    39% 74%,
+    16% 92%,
+    23% 65%,
+    0% 59%,
+    21% 45%,
+    2% 28%,
+    29% 31%
+  );
+
+  font-family: Impact, sans-serif;
+  font-size: 19px;
+  text-shadow: 2px 2px 0 var(--cdm-black);
+
+  transform: rotate(-8deg);
+}
+
+
+/* Cartouche HEROES */
+
+.cdm-caption {
+  padding: 8px 14px;
+
+  position: absolute;
+  left: 10px;
+  bottom: 18px;
+  z-index: 5;
+
+  color: var(--cdm-black);
+  background: var(--cdm-white);
+
+  border: 3px solid var(--cdm-black);
+  box-shadow: 4px 4px 0 var(--cdm-black);
+
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+/* Note sous le portrait */
+
+.cdm-side-note {
+  padding: 10px;
+
+  color: var(--cdm-black);
+  background: var(--cdm-white);
+
+  border: 4px solid var(--cdm-black);
+
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+
+/* ─────────────────────────────────────
+   COLONNE PRINCIPALE
+───────────────────────────────────── */
+
+.cdm-main {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--cdm-black);
+  border: 4px solid var(--cdm-black);
+}
+
+
+/* En-tête du titre */
+
+.cdm-heading {
+  height: 170px;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, .4) 1px,
+      transparent 1.5px
+    ),
+    var(--cdm-blue);
+
+  background-size: 6px 6px;
+}
+
+
+/* Éclat derrière le titre */
+
+.cdm-burst {
+  width: 115%;
+  height: 145%;
+
+  position: absolute;
+  inset: -22% -8%;
+
+  background: white;
+
+  clip-path: polygon(
+    50% 0%,
+    57% 34%,
+    76% 4%,
+    69% 39%,
+    100% 22%,
+    74% 47%,
+    100% 59%,
+    70% 58%,
+    88% 91%,
+    60% 67%,
+    54% 100%,
+    47% 68%,
+    30% 100%,
+    36% 64%,
+    4% 86%,
+    30% 56%,
+    0% 48%,
+    31% 43%,
+    4% 16%,
+    39% 36%
+  );
+
+  transform: rotate(-5deg);
+}
+
+
+/* Grand titre */
+
+.cdm-title {
+  position: relative;
+  z-index: 3;
+
+  color: var(--cdm-yellow);
+
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: clamp(38px, 6vw, 58px);
+  font-style: italic;
+  font-weight: 900;
+  line-height: .74;
+  letter-spacing: -1px;
+  text-align: center;
+  text-transform: uppercase;
+
+  -webkit-text-stroke: 2px var(--cdm-black);
+
+  text-shadow:
+    4px 4px 0 var(--cdm-pink),
+    7px 7px 0 var(--cdm-black);
+
+  transform:
+    rotate(-5deg)
+    skew(-5deg);
+}
+
+.cdm-title span,
+.cdm-title strong {
+  display: block;
+}
+
+.cdm-title strong {
+  margin-left: 24px;
+  font-size: .78em;
+}
+
+
+/* Sous-titre */
+
+.cdm-subtitle {
+  padding: 6px 10px;
+
+  position: absolute;
+  left: 9px;
+  bottom: 7px;
+  z-index: 5;
+
+  color: var(--cdm-black);
+  background: var(--cdm-yellow);
+
+  border: 3px solid var(--cdm-black);
+  box-shadow: 4px 4px 0 var(--cdm-black);
+
+  font-family: "Comic Sans MS", cursive;
+  font-size: 9px;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  transform: rotate(-2deg);
+}
+
+
+/* ─────────────────────────────────────
+   TEXTE RP SANS HAUTEUR LIMITÉE
+───────────────────────────────────── */
+
+.cdm-text {
+  padding: 24px 24px 32px;
+
+  color: var(--cdm-black);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, .08) 1px,
+      transparent 1.5px
+    ),
+    var(--cdm-white);
+
+  background-size: 6px 6px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.cdm-text p {
+  margin: 0 0 18px;
+}
+
+.cdm-text p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Lettrine */
+
+.cdm-text p:first-child::first-letter {
+  float: left;
+
+  margin: 7px 8px 0 0;
+
+  color: var(--cdm-yellow);
+
+  font-family: Impact, sans-serif;
+  font-size: 48px;
+  line-height: .7;
+
+  -webkit-text-stroke: 2px var(--cdm-black);
+
+  text-shadow:
+    3px 3px 0 var(--cdm-red);
+}
+
+
+/* Dialogue */
+
+.cdm-citation {
+  margin: 22px -10px;
+  padding: 14px 16px;
+
+  color: var(--cdm-black);
+  background: var(--cdm-yellow);
+
+  border: 3px solid var(--cdm-black);
+  box-shadow: 5px 5px 0 var(--cdm-pink);
+
+  font-family: "Comic Sans MS", cursive;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: left;
+
+  transform: rotate(-1deg);
+}
+
+.cdm-text strong {
+  color: var(--cdm-yellow);
+}
+
+.cdm-text em {
+  color: var(--cdm-orange);
+}
+
+
+/* ─────────────────────────────────────
+   PIED DE FICHE
+───────────────────────────────────── */
+
+.cdm-footer {
+  min-height: 60px;
+  margin-top: 6px;
+  padding: 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, .13) 1px,
+      transparent 1.5px
+    ),
+    var(--cdm-black);
+
+  background-size: 6px 6px;
+
+  border: 4px solid var(--cdm-black);
+}
+
+.cdm-footer-box {
+  flex: 1;
+  padding: 8px;
+
+  color: var(--cdm-black);
+  background: var(--cdm-white);
+
+  border: 3px solid var(--cdm-black);
+
+  font-family: "Courier New", monospace;
+  font-size: 8px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.cdm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cdm-tags span {
+  padding: 4px 6px;
+
+  color: var(--cdm-black);
+  background: var(--cdm-white);
+
+  border: 2px solid var(--cdm-black);
+
+  font-family: "Courier New", monospace;
+  font-size: 7px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cdm-continue {
+  padding: 5px 7px;
+
+  flex-shrink: 0;
+
+  color: var(--cdm-black);
+  background: var(--cdm-yellow);
+
+  border: 3px solid var(--cdm-black);
+
+  font-family: Impact, sans-serif;
+  font-size: 10px;
+  font-style: italic;
+  line-height: .9;
+  text-align: center;
+
+  transform: rotate(-2deg);
+}
+
+
+/* ─────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────── */
+
+@media screen and (max-width: 600px) {
+
+  .cdm-post {
+    width: calc(100% - 10px);
+  }
+
+  .cdm-layout {
+    grid-template-columns: 150px minmax(0, 1fr);
+  }
+
+  .cdm-character {
+    height: 470px;
+  }
+
+  .cdm-text {
+    padding: 22px 20px 28px;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .cdm-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cdm-main {
+    order: -1;
+  }
+
+  .cdm-character {
+    height: 340px;
+  }
+
+  .cdm-character img {
+    object-position: center 20%;
+  }
+
+  .cdm-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cdm-tags {
+    justify-content: center;
+  }
+
+  .cdm-continue {
+    align-self: flex-end;
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .cdm-top {
+    height: 130px;
+  }
+
+  .cdm-narration-top {
+    right: 7px;
+    left: 58px;
+  }
+
+  .cdm-heading {
+    height: 155px;
+  }
+
+  .cdm-title {
+    font-size: clamp(36px, 13vw, 51px);
+
+    -webkit-text-stroke: 2px var(--cdm-black);
+
+    text-shadow:
+      3px 3px 0 var(--cdm-pink),
+      5px 5px 0 var(--cdm-black);
+  }
+
+  .cdm-text {
+    padding: 21px 17px 27px;
+
+    font-size: 12px;
+    line-height: 1.85;
+  }
+
+  .cdm-dialogue {
+    margin-right: -6px;
+    margin-left: -6px;
+  }
+
+}
