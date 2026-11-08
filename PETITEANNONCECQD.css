@@ -248,3 +248,12 @@
     font-size: 18px;
   }
 }
+
+.rp-annonce .rp-annonce-details > div:last-child {
+  background: var(--noir, #000);
+  color: var(--blanc, #fff);
+}
+
+.rp-annonce .rp-annonce-details > div:last-child b {
+  color: inherit;
+}
