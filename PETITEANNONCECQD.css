@@ -1,0 +1,250 @@
+/* =========================================
+   PETITE ANNONCE — RECHERCHE DE RP
+   ========================================= */
+
+.rp-annonce {
+  /* La couleur du personnage est remplacée par le JavaScript. */
+  --rp-accent: var(--accent);
+
+  /* Couleurs héritées du thème du forum. */
+  --rp-fond: var(--fond-clair);
+  --rp-texte: var(--teinte-2f2f2f);
+  --rp-secondaire: var(--texte-moyen);
+  --rp-bordure: var(--bordure-claire);
+  --rp-cartouche: var(--fond-secondaire);
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 16px;
+
+  /* Fond de secours puis dégradé teinté par le groupe. */
+  background: var(--rp-fond);
+  background: linear-gradient(
+    125deg,
+    color-mix(
+      in srgb,
+      var(--rp-accent) 13%,
+      var(--rp-fond)
+    ) 0%,
+    var(--rp-fond) 65%,
+    color-mix(
+      in srgb,
+      var(--rp-accent) 5%,
+      var(--rp-fond)
+    ) 100%
+  );
+
+  border: 1px solid var(--rp-bordure);
+  border-left: 4px solid var(--rp-accent);
+  border-radius: 12px;
+
+  color: var(--rp-texte);
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.rp-annonce,
+.rp-annonce * {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   IMAGE LATÉRALE
+   Largeur fixe, hauteur adaptée au contenu.
+   ========================================= */
+
+.rp-annonce .rp-annonce-image {
+  display: block;
+  flex: 0 0 100px;
+  align-self: stretch;
+
+  width: 100px;
+  height: auto;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: none;
+  max-height: none;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-radius: 7px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================
+   CONTENU ET IDENTITÉ
+   ========================================= */
+
+.rp-annonce .rp-annonce-contenu {
+  flex: 1;
+  min-width: 0;
+  padding: 3px 0;
+}
+
+.rp-annonce .rp-annonce-etiquette {
+  margin: 0 0 5px;
+
+  color: var(--rp-secondaire);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.rp-annonce .rp-annonce-nom {
+  margin: 0 0 13px;
+
+  color: var(--rp-accent);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.rp-annonce .rp-annonce-nom a,
+.rp-annonce .rp-annonce-nom a * {
+  color: var(--rp-accent) !important;
+  text-decoration: none !important;
+}
+
+.rp-annonce .rp-annonce-nom a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+/* =========================================
+   CARTOUCHES — PARTENAIRES, LIEU, STATUT
+   ========================================= */
+
+.rp-annonce .rp-annonce-infos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  margin: 0 0 15px;
+  padding: 0;
+
+  border: 0;
+  color: var(--rp-texte);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.rp-annonce .rp-annonce-infos > span {
+  display: block;
+  max-width: 100%;
+  padding: 6px 10px;
+
+  background: var(--rp-cartouche);
+  background: color-mix(
+    in srgb,
+    var(--rp-accent) 10%,
+    var(--rp-cartouche)
+  );
+
+  border-radius: 6px;
+  overflow-wrap: anywhere;
+}
+
+.rp-annonce .rp-annonce-infos b {
+  color: inherit;
+  font-weight: 700;
+}
+
+/* =========================================
+   TEXTE DE RECHERCHE
+   ========================================= */
+
+.rp-annonce .rp-annonce-texte {
+  margin: 0;
+  padding: 0;
+
+  color: var(--rp-texte);
+  font-size: 13px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.rp-annonce .rp-annonce-texte p {
+  margin: 0 0 10px;
+}
+
+.rp-annonce .rp-annonce-texte p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   ENVIES ET RYTHME
+   ========================================= */
+
+.rp-annonce .rp-annonce-details {
+  display: grid;
+  gap: 7px;
+
+  margin: 15px 0 0;
+  padding: 0;
+
+  border: 0;
+  color: var(--rp-secondaire);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.rp-annonce .rp-annonce-details > div {
+  padding: 8px 11px;
+
+  background: var(--rp-cartouche);
+  background: color-mix(
+    in srgb,
+    var(--rp-accent) 5%,
+    var(--rp-fond)
+  );
+
+  border-left: 2px solid var(--rp-accent);
+  border-radius: 0 6px 6px 0;
+
+  overflow-wrap: anywhere;
+}
+
+.rp-annonce .rp-annonce-details b {
+  color: var(--rp-texte);
+  font-weight: 700;
+}
+
+/* =========================================
+   AFFICHAGE MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+  .rp-annonce {
+    flex-direction: column;
+    gap: 15px;
+    padding: 14px;
+  }
+
+  .rp-annonce .rp-annonce-image {
+    flex: none;
+
+    width: 100%;
+    height: 150px;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .rp-annonce .rp-annonce-nom {
+    font-size: 18px;
+  }
+}
