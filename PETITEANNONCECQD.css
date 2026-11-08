@@ -251,7 +251,8 @@
 
 .rp-annonce .rp-annonce-details > div:last-child {
   background: var(--rp-accent);
-  color: var(--noir, #000);
+  color: var(--blanc, #fff);
+  border-radius: 6px;
 }
 
 .rp-annonce .rp-annonce-details > div:last-child b {
